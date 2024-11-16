@@ -46,7 +46,8 @@ class CustomerAdmin(admin.ModelAdmin):
 '''
 
 ## OUTPUT
-![alt text](<Loan/Loan/Screenshot (6).png>)
+![Screenshot (6)](https://github.com/user-attachments/assets/a520809c-3907-42d3-937a-6a1ac9f2ba47)
+
 
 
 ## RESULT
