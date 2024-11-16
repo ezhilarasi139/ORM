@@ -25,7 +25,7 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-'''
+```
 admin.py
 
 from django.contrib import admin
@@ -44,7 +44,7 @@ class Customer (models.Model):
  
 class CustomerAdmin(admin.ModelAdmin):
     list_display=('eid','name','salary','age','email')
-'''
+```
 
 ## OUTPUT
 ![Screenshot (6)](https://github.com/user-attachments/assets/a520809c-3907-42d3-937a-6a1ac9f2ba47)
