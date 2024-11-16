@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 
+## Date: 12.11.2024
 
 ## AIM
 To develop a Django application to store and retrieve data from a bank loan database using Object Relational Mapping(ORM).
@@ -24,11 +24,29 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
+'''
+admin.py
 
+from django.contrib import admin
+from .models import Customer,CustomerAdmin
+admin.site.register(Customer,CustomerAdmin)
+
+models.py
+from django.db import models
+from django.contrib import admin
+class Customer (models.Model):
+    eid=models.IntegerField(primary_key=True)
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    email=models.EmailField()
+ 
+class CustomerAdmin(admin.ModelAdmin):
+    list_display=('eid','name','salary','age','email')
+'''
 
 ## OUTPUT
-
-Include the screenshot of your admin page.
+![alt text](<Loan/Loan/Screenshot (6).png>)
 
 
 ## RESULT
